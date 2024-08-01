@@ -1,0 +1,132 @@
+# JavaScript:
+
+JS is a programming language. We use it to give
+instruction to the computer.
+JS is a Dynamic type program.
+input (code) ----> Computer ------> Output
+
+# Our 1st JS Code :
+
+Console.log is use to log (print) a message to the Console.
+
+console.log("Hello World") ---> Hello World
+
+# How to connect JS with Browser :
+
+- first creat js file eg. index.js
+- second create html file; below <body> tag, type
+  <script src='index.js'> </script>.
+- Open html file on browser. whatever code we write
+  in js will be execute will be display/output in
+  browser.
+
+# Variables in JS:
+
+Variable is a container where we store data.
+x = 45; # integer
+x = 'John' # string
+x = null; # absence of value
+x = undefined; # undefined value stored
+a = 45; # in 'a' variable assign '45' value. So '=' is assignment operator.
+
+# Variable Rules:
+
+- Variable name are case sensitive; 'a' & 'A' is different.
+- Only letters, digits, underscore(-) and $ is allow. (not even space)
+- Only a letter, underscore(\_) or $ shoule be 1st character.
+- Reserved words cannot be variable names.
+
+# Reserved Keywords
+
+- Reserved keywords cannot be used as identifier for various, function, clasess
+  etc. anywhere in JavaScript source.
+
+# Variable Name Convention:
+
+- fullName : Camel Case \* generally we use Camel Case
+- full_name : Snake Case
+- full-name : Kebab Case
+- FullName : Pascal Case
+
+# let, const & var: (ES6 - Echma Script-)2015
+
+    * launch new version of ES6 in 2015 in new features
+    * Echma Script also called Modern JavaScript.
+
+- var : variable can be re-declared & updated. A global scope variable.
+- let : variable cannot be re-declared but can be updated. A block scope variable.
+- const : variable cannot be re-declared or updated. A block scope variable.
+
+* example:
+
+  - var : // re-declared & updated
+    var age = 23;
+    var age = 34;
+    var age = 89;
+    console.log(age);
+
+  - let : // can not re-declared & but can be updated.
+    let fit = 45;
+    console.log(fit);
+
+  - const : // constant value store which cannot be re-declared of updated.
+    const bet = 45;
+    const Pi = 3.14;
+    console.log(Pi);
+
+    - undefined
+      let k; // variable 'k' is treated as undefined variable.
+      console.log(k);
+
+# A Block Variable Scope {}:
+
+- A code or variable define inside a curly bracket is callea a block variable scope.
+  example:
+  {
+  let a = 5
+  consol.log(a)
+  }
+  {
+  let a = 10
+  consol.log(a)
+  }
+
+# Data Type in JS:
+
+(Number, String, Boolean, Undefined, Null, BigInt, Symbol)
+
+1.  Primitive Data Type
+    a. Numeric : contain number either positive or negative even including decimal values.
+    let a = 67
+    b. String : array of sequence of character encolse in quote.
+    c. Boolean : return true of false
+    d. Undefined : values of variable not defined / Its treated as object
+
+    e. Null : Absense of value
+    let a = Null; -----> Null
+
+    f. BigInt : store big integers
+    let m = BigInt("49749") ---> 49749n
+
+    g. Symbol :
+    let u = Symbol("Hello...!!") ----> Symbol(Hell....!)
+
+2.  Non-Primitive Data Type:
+    \*Object : It's a collection of values.
+
+        @Object:
+        const tango = {
+
+            id: 101,
+            name: "Tej",
+            add: "Nepalgunj",
+            mob: 9868014825,
+            email: "jargha@gmail.com",
+            isMember: true,
+            };
+            $ access value through/using keys.
+
+            console.log(tango); ----> {id: 101, name: 'Tej', add: 'Nepalgunj', mob: 9868014825, email: 'jargha@gmail.com', …}
+            console.log(tango.mob) -----> 9868014825
+            console.log(tango.email) -----> jargha@gmail.com
+            console.log(tango.add) -----> Nepalgunj
