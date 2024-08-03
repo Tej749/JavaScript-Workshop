@@ -1,0 +1,23 @@
+# Comment
+students:
+  student1:
+    name: Raju Thapa
+    age: 10
+    passed: true
+    subject:
+      - Math
+      - English
+    marks:
+      Math: 90
+      English: 80
+  student2:
+    name: Shyam
+    age: 18
+    passed: true
+    subject:
+      - Math
+      - English
+    marks:
+      Math: 65
+      English: 70
+ 
